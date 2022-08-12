@@ -1,0 +1,25 @@
+----Create Bookstore Database
+
+CREATE TABLE bookstore (id INTEGER PRIMARY KEY, book TEXT, author TEXT, year INTEGER, price INTEGER);
+
+INSERT INTO bookstore VALUES (1, "The Perfect Child", "Lucinda Berry", 2019, 10);
+INSERT INTO bookstore VALUES (2, "The Bones Houses", "Emily LJ", 2019, 10);
+INSERT INTO bookstore VALUES (3, "From Bad to Cursed", "Lana Harper", 2022, 20);
+INSERT INTO bookstore VALUES (4, "Defy the Night", "Brigid Kemmerer", 2021, 15);
+INSERT INTO bookstore VALUES (5, "Portrait of a Thief", "Grace D. Li", 2022, 20);
+INSERT INTO bookstore VALUES (6, "Winterwood", "Shea Ernshaw", 2019, 10);
+INSERT INTO bookstore VALUES (7, "The Keeper of Night", "Kylie Lee Baker", 2021, 15);
+INSERT INTO bookstore VALUES (8, "If We Were Villains", "ML Rio", 2017, 10);
+INSERT INTO bookstore VALUES (9, "You've Reached Sam", "Dustin Thao", 2021, 15);
+INSERT INTO bookstore VALUES (10, "The Fifth Season", "NK Jemisin", 2015, 10);
+INSERT INTO bookstore VALUES (11, "Book of Night", "Holly Black", 2022, 20);
+INSERT INTO bookstore VALUES (12, "Jade City", "Fonda Lee", 2018, 10);
+INSERT INTO bookstore VALUES (13, "Iron Widow", "Xiran Jay Zhao", 2021, 15);
+INSERT INTO bookstore VALUES (14, "The Ex Hex", "Erin Sterling", 2021, 15);
+INSERT INTO bookstore VALUES (15, "House of Sky and Breath", "SJM", 2022, 20);
+
+--display the database ordered by price.
+SELECT * FROM bookstore ORDER BY price; 
+
+---display the database by price under < 15
+SELECT * FROM bookstore WHERE price < 15 ORDER BY year; 
